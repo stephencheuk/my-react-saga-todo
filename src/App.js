@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { lazy, Suspense } from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { connect } from 'react-redux';
+
+import Header from './Header';
 
 const App = ({ state }) => {
 
   return (
     <div>
-      <h1>{ state.root.Name }</h1>
+      <Header/>
     </div>
   );
 

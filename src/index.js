@@ -5,7 +5,8 @@ import { Provider } from 'react-redux';
 
 import App from './App';
 
-import { store } from './redux-store';
+import initStore from './saga-store';
+const store = initStore();
 
 ReactDOM.render(
   <Provider store={store}>

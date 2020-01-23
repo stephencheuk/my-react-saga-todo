@@ -67,3 +67,11 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 # my-react-todo
+
+
+1. App.js
+  1.1. Import saga-store.js
+      1.1.1. it is a initial reducer with initial state
+      1.1.2. and use SagaMiddleware as a middleware for inject new loading reducer
+  1.2. Import i18n/i18nContainer.js
+      1.2.1. use lazy import
